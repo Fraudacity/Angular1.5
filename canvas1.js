@@ -36,7 +36,7 @@ var c = canvas.getContext('2d');
 // c.strokeStyle = "blue";
 // c.stroke();
 // }
-
+//222
 
 
 var x = Math.random() * innerWidth;
