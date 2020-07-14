@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span::after{
+            padding: 15px;
+        }
+        input:invalid+span::after{
+            content:"\274C";
+        }
+        input:valid+span::after{
+            content:"\2713";
+        }
+    </style>
+</head>
+<body>
+    <!-- <label>Chose your prefered visit time required, Feb 12 to 20</label>
+    <input type="date" min="2020-02-12" max="2020-02-20" required>
+    <span></span> -->
+
+<form>
+    <input type="email" required size="30" pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b">
+    <p>
+
+        <input type="submit" value="Click">
+    </p>
+</form>
+</body>
+</html>
