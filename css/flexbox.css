@@ -7,12 +7,12 @@
 .parent{
     height: 100vh;
     border: 20px solid black;
-    display: flex;
+    display:flex;
 
-    /* flex-flow: column-wrap; */
+    flex-flow: column-wrap;
     /* align-items: baseline; */
-    /* flex-wrap: wrap;
-    align-content: space-around; */
+    flex-wrap: wrap;
+    align-content: space-around; 
 
 
     /* flex-direction: row-reverse; */
@@ -21,7 +21,7 @@
     /* justify-content: flex-start; */
     /* justify-content: flex-end; */
     /* justify-content: center; */
-    /* justify-content: space-around; */
+    justify-content: space-around;
     /* justify-content: space-evenly; */
 
     /* align-items: flex-start; */
@@ -39,7 +39,7 @@
     /* order: 1; */
     /* flex-grow: 1;
     flex-basis: 100px; */
-    flex: 1 1  200px;
+    /* flex: 1 1  200px; */
 
 }
 .child2{
@@ -48,7 +48,7 @@
     background: rgb(172,57,53);
     /* order: 0; */
     /* flex-grow: 1; */
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
 
 }
 .child3{
@@ -57,7 +57,7 @@
     background: rgb(149,43,134);
     /* order: 2; */
     /* flex-grow: 1; */
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
 
 
 }
@@ -67,14 +67,21 @@
     background: rgb(0,43,140);
     /* order: 4; */
     /* flex-grow: 1; */
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
 
 
 }
-/* .child5{
+.child5{
+    width: 100px;
+    height: 100px;
+    background: rgb(20,3,255);
+    /* order: 3; */
+
+} 
+.child6{
     width: 100px;
     height: 100px;
     background: rgb(149,43,255);
-    order: 3;
+    /* order: 3; */
 
-}  */
+} 
