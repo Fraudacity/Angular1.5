@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box1{
+    background: red;
+}
+.box2{
+    background: rgb(131, 78, 192);
+}
+.box3{
+    background: rgb(193, 211, 30);
+}
+main{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.box3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
