@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function Student(){
+        //     this.name ="John"
+        //     this.gender = "Male"
+        // }
+        //  Student.prototype.age = 20;
+        
+        // var st1 = new Student();
+        // alert(st1.age)
+
+        // var st2 = new Student();
+        // alert(st2.age)
+
+        function Person(firstName, lastName){
+
+this.Firstname = firstName || "Unknown"
+this.Lastname = lastName || "Unknown"
+
+
+        }
+        Person.prototype.getFullname = function(){
+            return this.FirstName + " " + this.LastName
+        }
+        function Person(firstName, lastName, schoolName, grade){
+Person.call(this, firstName, lastName)
+        this.schoolName = schoolName || "Unknown"
+        this.grade = grade || 0
+        }
+
+        Student.prototype = new Person.prototype;
+        // Student.prototype.construtor=Student
+
+
+        var std = new Student("Bill", "Gates", "sunn vally", 10)
+
+        console.log(std.getFullname())
+        console.log(std instanceof Student)
+        console.log(std instanceof Person)
+
+    </script>
+</body>
+</html>
