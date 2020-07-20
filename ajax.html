@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title       >Document</title>
+    <script>
+        function displayFullname() {
+            var request = new XMLHttpRequest();
+            
+            request.open("GET", ,true);
+            request.onreadystatechange =         function() {
+                if(this.readyState===4&& this.status===200){
+                    document.getElementById("result").innerHTML=this.responseText;
+                   }
+                
+            };
+            request.send();
+        }
+    </script>
+</head>
+<body>
+    
+<div id="result">
+    <p>COntent of the reuslt div box will be replace by the server response </p>
+
+</div>
+<button type="button" onclick="displayFullName()">Display Full Name</button>
+</body>
+</html>

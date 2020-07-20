@@ -7,16 +7,34 @@
 </head>
 <body>
     <script>
-        function add(a,b){
-            return a+b
-        }
-        let sum = function add(a,b){
-            return a+b
-        }
-        let sum = (a,b) => a+b
+        // function add(a,b){
+        //     return a+b
+        // }
+        // let sum = function add(a,b){
+        //     return a+b
+        // }
+        // let sum = () (a,b) => a+b
         
-        alert(sum(1, 2))
+        // alert(sum(1, 2))
 
+
+    //     let age = prompt("what is your age?", 18);
+
+    //   let welcome = (age<20)? ()=>alert("<20") : ()=>alert (">20")
+    
+    let group = {
+        title:"Our Group",
+        students:["will","bill", "john"],
+
+        showList(){
+            this.students.forEach(
+                student => alert(this.title+" :"+student)
+
+            )
+        }
+    }
+    group.showList();
+    welcome();
     </script>
 </body>
 </html>
