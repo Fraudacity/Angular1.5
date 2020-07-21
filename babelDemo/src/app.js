@@ -1,1 +1,5 @@
-let test= () => console.log("123")
+import {person, hello} from './lib'
+
+alert (person.name)
+
+alert(hello('partha'))
