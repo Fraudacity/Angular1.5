@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <script src="angular.js"></script>
+    <script src="filter.js"></script>
+</head>
+<body ng-app="myModule">
+    <div ng-controller="myController">
+        <table border="1">
+         Rows Displayed <input type="number" step="1" min="0" max="5" ng-model="rowLimit"/>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Salary (number filter)</th>
+                    <th>Salary (currency filter)</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="emp in employees | limitTo:rowLimit">
+                            <td>{{emp.name | uppercase}}</td>
+                            <td>{{emp.dateOfBirth | date:"dd/mm/yyyy"}}</td>
+                            <td>{{emp.gender | lowercase}}</td>
+                            <td>{{emp.salary | number:2}}</td>
+                            <td>{{emp.salary | currency:"₹":1}}</td>
+
+                    </tr>
+            </tbody>
+        </table>
+
+    </div>
+    
+</body>
+</html>
