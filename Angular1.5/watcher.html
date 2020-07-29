@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="angular.js"></script>
+    <script src="watcher.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="emp">
+
+        <div ng-repeat="o in emps">
+<div>{{o.empno}} - {{o.ename}}</div>
+        </div>
+        <button ng-click="addEmp">add</button>
+        <button ng-click="modify3rdEmp">Modify 3rd Emp</button>
+
+<!-- a = <input ng-model="o.a">
+b = <input ng-model="o.b"> -->
+<!-- 
+<div>c = {{o.c}}</div> -->
+
+    </div>
+</body>
+</html> 

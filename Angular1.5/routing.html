@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="routing.js"></script>
+    <title>Document</title>
+    <style>
+        .well{
+            margin:auto;;
+        }
+    </style>
+  
+</head>
+<body ng-app="app">
+<div class="row">
+<div class="div.col-sm-12 well">
+
+    Header <a href="#/">Home</a>
+</div>
+</div>
+        <div class="row">
+            <div class="col-sm-3 well" style="height: 100%;">
+    <ul>
+        <li><a href="#/sumurl/10/20">Sum Url</a></li>   
+        <li><a href="#/suminput">Sum Input</a></li>   
+
+            <!-- <li><a href="#/second-msg">Second</a></li>
+            <li><a href="#/third-msg">third</a></li> -->
+
+    </ul>
+    </div>
+     
+     <div class="col-sm-9 well" style="height: 100%;">
+        <div ng-view></div> 
+
+    </div>
+</div>
+
+
+
+    <!-- Home Page
+    <br>
+    <a href="#/first-msg">First</a><br>
+    <a href="#/second-msg">Second</a>
+    <div ng-view></div> -->
+  
+</body>
+</html>
