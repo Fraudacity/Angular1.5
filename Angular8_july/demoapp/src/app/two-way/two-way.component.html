@@ -1,0 +1,32 @@
+
+<input [(ngModel)]="name" type="text">
+{{name}}
+
+<!--------->
+
+<!-- <h2 *ngIf="displayName; else elseblock">
+
+Angular 8
+
+</h2>
+
+<ng-template #elseblock>
+        <h2 >
+        Angular 8 is hidden     
+        </h2>
+</ng-template> -->
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <h2>
+        then block
+    </h2>
+</ng-template>
+
+
+<ng-template #elseBlock>
+    <h2>
+        else block
+    </h2>
+</ng-template>

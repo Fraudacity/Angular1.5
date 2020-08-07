@@ -1,0 +1,16 @@
+<div [ngSwitch]= "color" >
+    <div *ngSwitchCase="'red'"[style.color]="color">
+        You Picked red color
+    </div>
+    <div *ngSwitchCase="'green'" [style.color]="color">
+        You Picked green color
+    </div> <div *ngSwitchCase="'blue'" [style.color]="color">
+        You Picked blue color
+    </div> <div *ngSwitchCase="'yellow'" [style.color]="color">
+        You Picked yellow color
+    </div>
+</div>
+
+<div *ngFor="let color of colors; index as i; first as f; last as l;even as e;odd as o">
+<h2>{{o}} {{e}} {{l}} {{f}} {{i}} {{color}}</h2>
+</div>
